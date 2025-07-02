@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Delivery Time Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        button {
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            text-align: center;
+            font-size: 20px;
+            color: #007bff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🛵 Food Delivery Time Predictor</h2>
+        <form action="{{ url_for('predict_datapoint') }}" method="post">
+
+            <div class="form-control">
+                <label for="Distance_km">Distance (in km)</label>
+                <input type="number" name="Distance_km" step="0.01" min="0" required>
+            </div>
+
+            <div class="form-control">
+                <label for="Weather">Weather</label>
+                <select name="Weather" required>
+                    <option disabled selected value="">Select Weather</option>
+                    <option value="Clear">Clear</option>
+                    <option value="Rainy">Rainy</option>
+                    <option value="Snowy">Snowy</option>
+                    <option value="Foggy">Foggy</option>
+                    <option value="Windy">Windy</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="Traffic_Level">Traffic Level</label>
+                <select name="Traffic_Level" required>
+                    <option disabled selected value="">Select Traffic Level</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="Time_of_Day">Time of Day</label>
+                <select name="Time_of_Day" required>
+                    <option disabled selected value="">Select Time of Day</option>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                    <option value="Night">Night</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="Vehicle_Type">Vehicle Type</label>
+                <select name="Vehicle_Type" required>
+                    <option disabled selected value="">Select Vehicle</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Scooter">Scooter</option>
+                    <option value="Car">Car</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="Preparation_Time_min">Preparation Time (min)</label>
+                <input type="number" name="Preparation_Time_min" min="0" required>
+            </div>
+
+            <div class="form-control">
+                <label for="Courier_Experience_yrs">Courier Experience (yrs)</label>
+                <input type="number" name="Courier_Experience_yrs" step="0.1" min="0" required>
+            </div>
+
+            <button type="submit">Predict Delivery Time</button>
+        </form>
+
+        {% if results %}
+        <div class="result">
+            📦 Predicted Delivery Time: <strong>{{ results }} </strong>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
