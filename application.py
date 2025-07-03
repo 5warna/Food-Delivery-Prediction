@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template,redirect
 import numpy as np
 import pandas as pd
 
@@ -10,7 +10,7 @@ app = application
 # Home route
 @app.route('/')
 def index():
-    return render_template('index.html')  # Optional landing page
+    return redirect('/predictdata')
 
 # Prediction form route
 @app.route('/predictdata', methods=['GET', 'POST'])
