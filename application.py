@@ -8,9 +8,9 @@ application = Flask(__name__)
 app = application
 
 # Home route
-@app.route('/')
-def index():
-    return render_template('index.html')  # Optional landing page
+# @app.route('/')
+# def index():
+    # return render_template('index.html')  # Optional landing page
 
 # Prediction form route
 @app.route('/predictdata', methods=['GET', 'POST'])
