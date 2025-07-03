@@ -8,9 +8,9 @@ application = Flask(__name__)
 app = application
 
 # Home route
-# @app.route('/')
-# def index():
-    # return render_template('index.html')  # Optional landing page
+@app.route('/')
+def index():
+    return render_template('index.html')  # Optional landing page
 
 # Prediction form route
 @app.route('/predictdata', methods=['GET', 'POST'])
@@ -47,4 +47,4 @@ def predict_datapoint():
         
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",port=5000) 
+    app.run(host="0.0.0.0",port=5000,use_reloader=False) 
