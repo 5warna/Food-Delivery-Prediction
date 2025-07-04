@@ -2,29 +2,66 @@
 
 #### Objective
 
-The goal of this dataset is to predict the delivery time (in minutes) for food orders using various real-world factors like distance, traffic, weather, and courier experience. This helps optimize delivery operations and improve customer satisfaction.
+This project predicts the estimated delivery time (in minutes) for food orders based on various features such as distance, weather, traffic level, preparation time, courier experience, and more. It is an end-to-end Machine Learning project with a deployed web app.
+
+This helps optimize delivery operations and improve customer satisfaction.
 
 #### Dataset Source
 
-Kaggle Link: Food Delivery Time Prediction Dataset
+Kaggle Link: https://www.kaggle.com/datasets/denkuznetz/food-delivery-time-prediction
 
-#### Key Features:
+### Render Deployment Link
 
-Order_ID: Unique identifier for each order.
+Check out the live web app: [Food Delivery Time Predictor] (https://food-delivery-time-prediction-wzyj.onrender.com)
 
-Distance_km: The delivery distance in kilometers.
+#### Screenshot
 
-Weather: Weather conditions during the delivery, including Clear, Rainy, Snowy, Foggy, and Windy.
+![homepage](https://github.com/user-attachments/assets/f1428813-76ad-4b71-9b85-cb567f385fd2)
 
-Traffic_Level: Traffic conditions categorized as Low, Medium, or High.
+#### Input Features
 
-Time_of_Day: The time when the delivery took place, categorized as Morning, Afternoon, Evening, or Night.
+- Distance (km)
+- Weather
+- Traffic Level
+- Time of Day
+- Vehicle Type
+- Preparation Time (min)
+- Courier Experience (yrs)
 
-Vehicle_Type: Type of vehicle used for delivery, including Bike, Scooter, and Car.
+#### Predicted Output
 
-Preparation_Time_min: The time required to prepare the order, measured in minutes.
+- Delivery Time (minutes)
 
-Courier_Experience_yrs: Experience of the courier in years.
+#### Features
 
-Delivery_Time_min: The total delivery time in minutes (target variable)
+- Exploratory Data Analysis (EDA)
+- Preprocessing Pipeline
+- Model Evaluation & Comparison
+- Flask Web Interface
+- Render Deployment
+- 
+#### ML Models Used
+
+- Linear Regression
+- Random Forest Regressor
+- Decision Tree Regressor 
+- Gradient Boosting Regressor
+- XGBoost Regressor
+- CatBoost Regressor
+- AdaBoost Regressor
+
+### Exploratory Data Analysis Notebook
+
+Link: EDA TIME PREDICTION Notebook
+
+### Model Training Notebook
+
+Link: Model Training
+
+#### Acknowledgements
+
+- Special thanks to Krish Naik for his valuable tutorials and guidance on end-to-end machine learning project deployment.
+- His content helped shape the structure, modularization, and deployment flow of this project.
+
+
 
