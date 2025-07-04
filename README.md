@@ -52,11 +52,11 @@ Check out the live web app: [Food Delivery Time Predictor] (https://food-deliver
 
 ### Exploratory Data Analysis Notebook
 
-Link: EDA TIME PREDICTION Notebook
+Link: https://github.com/5warna/Food-Delivery-Prediction/blob/master/notebook/EDA%20TIME%20PREDICTION.ipynb
 
 ### Model Training Notebook
 
-Link: Model Training
+Link: https://github.com/5warna/Food-Delivery-Prediction/blob/master/notebook/Model%20Training.ipynb
 
 #### Acknowledgements
 
