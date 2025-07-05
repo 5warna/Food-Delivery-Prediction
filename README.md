@@ -12,7 +12,7 @@ Kaggle Link: https://www.kaggle.com/datasets/denkuznetz/food-delivery-time-predi
 
 ### Render Deployment Link
 
-Check out the live web app: (https://food-delivery-time-prediction-wzyj.onrender.com)
+Check out the live web app: https://food-delivery-time-prediction-wzyj.onrender.com
 
 #### Screenshot
 
