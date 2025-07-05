@@ -104,6 +104,11 @@ Link: https://github.com/5warna/Food-Delivery-Prediction/blob/master/notebook/ED
 
 Link: https://github.com/5warna/Food-Delivery-Prediction/blob/master/notebook/Model%20Training.ipynb
 
+#### Acknowledgements
+
+- Special thanks to Krish Naik for his valuable tutorials and guidance on end-to-end machine learning project deployment.
+- His content helped shape the structure, modularization, and deployment flow of this project.
+
 <details>
 <summary>📂 Project Structure</summary>
 
@@ -130,10 +135,6 @@ Link: https://github.com/5warna/Food-Delivery-Prediction/blob/master/notebook/Mo
 ├── 📄 README.md                   # Project overview and documentation
 └── 📄 .gitignore                  # Files/folders to exclude from Git tracking
 
-#### Acknowledgements
-
-- Special thanks to Krish Naik for his valuable tutorials and guidance on end-to-end machine learning project deployment.
-- His content helped shape the structure, modularization, and deployment flow of this project.
 
 
 
