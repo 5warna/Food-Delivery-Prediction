@@ -104,41 +104,30 @@ Link: https://github.com/5warna/Food-Delivery-Prediction/blob/master/notebook/ED
 
 Link: https://github.com/5warna/Food-Delivery-Prediction/blob/master/notebook/Model%20Training.ipynb
 
+<details>
+<summary>📂 Project Structure</summary>
+
+```bash
 📦 Food-Delivery-Prediction
 ├── 📁 src
 │   ├── 📁 components              # Data Ingestion, Data Transformation, Model Trainer
-
 │   ├── 📁 pipeline                # Prediction Pipeline, Train Pipeline
-
 │   ├── 📄 utils.py                # Utility functions (save/load objects, evaluate models)
-
 │   ├── 📄 exception.py            # Custom exception class
-
 │   └── 📄 logger.py               # Logger configuration for tracking
 │
 ├── 📁 templates                   # HTML templates (home.html, index.html)
-│
 ├── 📁 notebook                    # Jupyter notebooks (EDA, model training)
-
 │   ├── EDA TIME PREDICTION.ipynb
-
 │   └── Model Training.ipynb
-
-│
 ├── 📁 artifacts                   # Contains generated data (data.csv, train.csv, test.csv, models.pkl, preprocessors.pkl)
-
-├── 📁 screenshot                  # Screenshots of the UI (e.g. homepage.png, initial_input.png, predicted_result.png)
-
+├── 📁 screenshot                  # Screenshots of the UI (e.g. homepage.png, input.png, result.png)
+│
 ├── 📄 application.py              # Flask application script
-
 ├── 📄 requirements.txt            # Project dependencies
-
 ├── 📄 render.yaml                 # Configuration file for Render deployment
-
 ├── 📄 setup.py                    # For installing package using pip
-
 ├── 📄 README.md                   # Project overview and documentation
-
 └── 📄 .gitignore                  # Files/folders to exclude from Git tracking
 
 #### Acknowledgements
