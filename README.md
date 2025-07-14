@@ -102,6 +102,7 @@ Check out the live web app: [Food Delivery Time Predictor](https://food-delivery
    pip install -r requirements.txt
 
 3. Run the Flask app:
+
    python application.py
 
 4. Open your browser at http://localhost:5000 to access the web app.
