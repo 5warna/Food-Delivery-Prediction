@@ -12,7 +12,7 @@ Kaggle Link: https://www.kaggle.com/datasets/denkuznetz/food-delivery-time-predi
 
 ### Render Deployment Link
 
-Check out the live web app: https://food-delivery-time-prediction-wzyj.onrender.com
+Check out the live web app: [Food Delivery Time Predictor](https://food-delivery-time-prediction-wzyj.onrender.com)
 
 #### Screenshot
 
@@ -66,15 +66,13 @@ Check out the live web app: https://food-delivery-time-prediction-wzyj.onrender.
 
     - Numerical Features: Imputed using median strategy, then scaled with StandardScaler.
 
-    - Categorical Features: Imputed with the most frequent strategy, encoded via OneHotEncoder, and scaled.
+    - Categorical Features: Imputed with the most frequent strategy, encoded via OneHotEncoder.
 
-Saves the preprocessing object (preprocessor.pkl) for future use.
+- Saves the preprocessing object (preprocessor.pkl) for future use.
 
 3. Model Training
 
-- Trains and evaluates various regressors including:
-
-- Linear, Decision Tree, Random Forest, XGBoost, CatBoost, etc.
+- Trains and evaluates various regressors including Linear, Decision Tree, Random Forest, XGBoost, CatBoost, etc.
 
 - The best model is saved as a serialized file (model.pkl).
 
@@ -88,13 +86,25 @@ Saves the preprocessing object (preprocessor.pkl) for future use.
 
 - Built a clean user interface using HTML and CSS.
 
-- Allows users to input real-world features and get delivery time prediction instantly.
+- Allows users to input real-world features and get predicted delivery time instantly.
 
 - Deployed using Render for public access.
 
 6. Requirements File
 
 - The requirements.txt file lists all the Python libraries and versions used in this project, ensuring the same environment can be replicated anywhere.
+
+### How to Run
+
+1. Clone the repository.  
+2. Install dependencies:  
+   ```bash
+   pip install -r requirements.txt
+
+3. Run the Flask app:
+   python application.py
+
+4. Open your browser at http://localhost:5000 to access the web app.
 
 ### Exploratory Data Analysis Notebook
 
