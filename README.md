@@ -1,4 +1,4 @@
-## Food Delivery Times Prediction
+## Food Delivery Time Prediction
 
 #### Objective
 
